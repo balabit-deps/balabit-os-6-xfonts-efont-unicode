@@ -1,0 +1,46 @@
+Source: xfonts-efont-unicode
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends-Indep: debhelper (>= 9), bdfresize (>= 1.4), xfonts-utils, gawk
+Standards-Version: 3.9.6
+Homepage: http://openlab.ring.gr.jp/efont/unicode/
+Vcs-Git: git://anonscm.debian.org/pkg-fonts/xfonts-efont-unicode/
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-fonts/xfonts-efont-unicode.git/
+
+Package: xfonts-efont-unicode
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}
+Suggests: xfs | xserver
+Recommends: xfonts-efont-unicode-ib
+Description: /efont/ Unicode fonts for X which cover various scripts
+ /efont/ is an X BDF font package for 10, 12, 14, 16, and 24 pixels
+ which are encoded in Unicode.  Though they are still under development,
+ they contain various scripts including Latin, IPA, Greek, Cyrillic,
+ Armenian, Hebrew, Devanagari, Thai, Lao, Georgian, Runic, Hiragana,
+ Katakana, Hangul Syllables, and part of Arabic, Bopomofo, CJK Ideogram,
+ and various symbols.
+ .
+ This package contains normal (non-italic, medium) fonts only.
+ xfonts-efont-unicode-ib package is available for italic and bold
+ fonts.
+
+Package: xfonts-efont-unicode-ib
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}
+Suggests: xfs | xserver
+Recommends: xfonts-efont-unicode
+Description: /efont/ Unicode fonts for X (italic and bold)
+ /efont/ is an X BDF font package for 10, 12, 14, 16, and 24 pixels
+ which are encoded in Unicode.  Though they are still under development,
+ they contain various scripts including Latin, IPA, Greek, Cyrillic,
+ Armenian, Hebrew, Devanagari, Thai, Lao, Georgian, Runic, Hiragana,
+ Katakana, Hangul Syllables, and part of Arabic, Bopomofo, CJK Ideogram,
+ and various symbols.
+ .
+ This package contains italic, bold, and italic-bold fonts.  You may
+ want to install xfonts-efont-unicode package for non-itallic medium
+ fonts.

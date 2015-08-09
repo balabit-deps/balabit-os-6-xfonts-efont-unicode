@@ -1,0 +1,5 @@
+# See uscan(1) for format
+# Compulsory line, this is a version 3 file
+version=3
+
+http://openlab.ring.gr.jp/efont/dist/unicode-bdf/efont-unicode-bdf-(.*)-src\.tar\.bz2
